@@ -1,0 +1,7 @@
+version: "1"
+rules:
+- base: develop
+  upstream: boostorg:container_hash
+  mergeMethod: rebase
+  conflictReviewers:
+  - zaucy
