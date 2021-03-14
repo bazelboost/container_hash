@@ -1,0 +1,28 @@
+load("@rules_cc//cc:defs.bzl", "cc_binary")
+
+cc_binary(
+    name = "books",
+    srcs = ["books.cpp", "books.hpp"],
+    deps = ["//:container_hash"],
+)
+
+cc_binary(
+    name = "point",
+    srcs = ["point.cpp"],
+    deps = ["//:container_hash"],
+)
+
+cc_binary(
+    name = "portable",
+    srcs = ["portable.cpp"],
+    deps = ["//:container_hash"],
+)
+
+# cc_binary(
+#     name = "template",
+#     srcs = ["template.cpp", "template.hpp"],
+#     deps = [
+#         "//:container_hash",
+#         "@boost//unordered",
+#     ],
+# )
