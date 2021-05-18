@@ -10,8 +10,8 @@ cc_library(
     name = "container_hash_internal",
     hdrs = glob(["include/boost/**/*.hpp"], exclude = _public_hdrs),
     deps = [
-        "@boost//core",
-        "@boost//integer",
+        "@boost//libs/core",
+        "@boost//libs/integer",
     ],
 )
 
@@ -22,8 +22,8 @@ cc_library(
     hdrs = glob(_public_hdrs),
     deps = [
         ":container_hash_internal",
-        "@boost//config",
-        "@boost//type_traits",
-        "@boost//detail",
+        "@boost//libs/config",
+        "@boost//libs/type_traits",
+        "@boost//libs/detail",
     ],
 )

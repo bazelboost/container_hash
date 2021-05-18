@@ -23,6 +23,6 @@ cc_binary(
 #     srcs = ["template.cpp", "template.hpp"],
 #     deps = [
 #         "//:container_hash",
-#         "@boost//unordered",
+#         "@boost//libs/unordered",
 #     ],
 # )
